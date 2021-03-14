@@ -2,7 +2,7 @@
 
 [Ho Kei Cheng](https://hkchengrex.github.io/), Yu-Wing Tai, Chi-Keung Tang
 
-[[Paper]] [[Project Page]](https://hkchengrex.github.io/MiVOS/)
+[[Paper]] ((Soon!)) [[Project Page]](https://hkchengrex.github.io/MiVOS/)
 
 ![Parkour](https://imgur.com/slLiUkE.gif) ![Bike](https://imgur.com/7Kt452P.gif)
 
