@@ -63,13 +63,8 @@ total_frames = 0
 # Start eval
 for data in progressbar(test_loader, max_value=len(test_loader), redirect_stdout=True):
 
-    if args.split == 'val' or not args.use_km:
-        rgb = data['rgb'].cuda()
-        msk = data['gt'][0].cuda()
-    else:
-        # Move the data to gpu later as we don't have the memory in 600p
-        rgb = data['rgb']
-        msk = data['gt'][0]
+    rgb = data['rgb'].cuda()
+    msk = data['gt'][0].cuda()
     info = data['info']
     name = info['name'][0]
     k = len(info['labels'][0])
