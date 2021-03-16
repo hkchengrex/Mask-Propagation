@@ -34,11 +34,16 @@ This repo implements an improved version of the [Space-Time Memory Network (STM)
 We used these packages/versions in the development of this project. It is likely that higher versions of the same package will also work. This is not an exhaustive list -- other common python packages (e.g. pillow) are expected and not listed.
 
 - PyTorch `1.7.1`
+- torchvision `0.8.2`
 - OpenCV `4.2.0`
-- progressbar (`pip install progressbar2`)
+- progressbar
 - [thinspline](https://github.com/cheind/py-thin-plate-spline) for training (`pip install git+https://github.com/cheind/py-thin-plate-spline`)
-- gitpython for training (`pip install gitpython`)
-- gdown for downloading pretrained models (`pip install gdown`)
+- gitpython for training
+- gdown for downloading pretrained models
+
+Refer to the official [PyTorch guide](<https://pytorch.org/>) for installing PyTorch/torchvision. The rest (except thin spline) can be installed by:
+
+`pip install progressbar2 opencv-python gitpython gdown`
 
 ## Main Results
 
