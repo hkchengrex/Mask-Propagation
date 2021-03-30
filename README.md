@@ -115,7 +115,7 @@ Try it yourself: `python try_correspondence.py`.
 
 ## Pretrained models
 
-Here we provide two pretrained models. One is pretrained on static images and transferred to main training (we call it s02: stage 0 -> stage 2); the other is pretrained on both static images and BL30K then transferred to main training (we call it s012). For the s02 model, we train it for 300K (instead of 150K) iterations in the main training stage to offset the extra training. More iterations do not help/helps very little.
+Here we provide two pretrained models. One is pretrained on static images and transferred to main training (we call it s02: stage 0 -> stage 2); the other is pretrained on both static images and BL30K then transferred to main training (we call it s012). For the s02 model, we train it for 300K (instead of 150K) iterations in the main training stage to offset the extra training. More iterations do not help/help very little.
 The script `download_model.py` automatically downloads the s012 model. Put all pretrained models in `Mask-Propagation/saves/`.
 
 | Model | Google Drive | OneDrive |
