@@ -56,7 +56,8 @@ FPS is amortized, computed as total processing time / total number of frames irr
 [Find all the precomputed results here](https://drive.google.com/drive/folders/17wWbe0WlGdxTZj5YmHS5xuMXymaERr0L?usp=sharing).
 
 **DAVIS 2016 val:**
-`eval_davis_2016.py`
+
+Produced using `eval_davis_2016.py`
 
 | Model | Top-k? | J | F | J&F | FPS | Pre-computed results |
 | --- |:--:|:--:|:---:|:---:|:---:|---|
@@ -66,7 +67,8 @@ FPS is amortized, computed as total processing time / total number of frames irr
 | With BL pretraining | :heavy_check_mark: | 89.7 | 92.4 | 91.0 | 16.9 | D16_s012 |
 
 **DAVIS 2017 val:**
-`eval_davis.py`
+
+Produced using `eval_davis.py`
 
 | Model | Top-k? | J | F | J&F | FPS | Pre-computed results |
 | --- |:--:|:--:|:---:|:---:|:---:|---|
@@ -78,7 +80,8 @@ FPS is amortized, computed as total processing time / total number of frames irr
 For YouTubeVOS val and DAVIS test-dev we also tried the kernelized memory (called KM in our code) technique described in [Kernelized Memory Network for Video Object Segmentation](https://arxiv.org/abs/2007.08270). It works nicely with our top-k filtering.
 
 **YouTubeVOS val:**
-`eval_youtube.py`
+
+Produced using `eval_youtube.py`
 
 | Model | Kernel Memory (KM)? | J-Seen | J-Unseen | F-Seen | F-Unseen | Overall Score | Pre-computed results |
 | --- |:--:|:---:|:---:|:---:|:---:|:---:|---|
@@ -86,12 +89,17 @@ For YouTubeVOS val and DAVIS test-dev we also tried the kernelized memory (calle
 | Full model with top-k | :heavy_check_mark: | 81.6 | 77.7 | 85.8 | 85.9 | 82.8 | D17_testdev_s012_km |
 
 **DAVIS 2017 test-dev:**
-`eval_davis.py`
+
+Produced using `eval_davis.py`
 
 | Model | Kernel Memory (KM)? | J | F | J&F | Pre-computed results |
 | --- |:--:|:---:|:---:|:---:|---|
 | Full model with top-k | :x: | 72.7 | 80.2 | 76.5 | YV_val_s012 |
 | Full model with top-k | :heavy_check_mark: | 74.9 | 82.2 | 78.6 | YV_val_s012_km |
+
+### Running them yourselves
+
+You can look at the corresponding scripts (`eval_davis.py`, `eval_youtube.py`, etc.). The arguments tooltip should give you a rough idea of how to use them. For example, if you have downloaded the datasets and pretrained models using our scripts, you only need to specify the output path: `python eval_davis.py --output [somewhere]` for DAVIS 2017 validation set evaluation.
 
 ### Correspondences
 
