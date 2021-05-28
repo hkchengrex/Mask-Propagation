@@ -85,8 +85,8 @@ Produced using `eval_youtube.py`
 
 | Model | Kernel Memory (KM)? | J-Seen | J-Unseen | F-Seen | F-Unseen | Overall Score | Pre-computed results |
 | --- |:--:|:---:|:---:|:---:|:---:|:---:|---|
-| Full model with top-k | :x: | 80.6 | 77.3 | 84.7 | 85.5 | 82.0 | D17_testdev_s012 |
-| Full model with top-k | :heavy_check_mark: | 81.6 | 77.7 | 85.8 | 85.9 | 82.8 | D17_testdev_s012_km |
+| Full model with top-k | :x: | 80.6 | 77.3 | 84.7 | 85.5 | 82.0 | YV_val_s012 |
+| Full model with top-k | :heavy_check_mark: | 81.6 | 77.7 | 85.8 | 85.9 | 82.8 | YV_val_s012_km |
 
 **DAVIS 2017 test-dev:**
 
@@ -94,8 +94,8 @@ Produced using `eval_davis.py`
 
 | Model | Kernel Memory (KM)? | J | F | J&F | Pre-computed results |
 | --- |:--:|:---:|:---:|:---:|---|
-| Full model with top-k | :x: | 72.7 | 80.2 | 76.5 | YV_val_s012 |
-| Full model with top-k | :heavy_check_mark: | 74.9 | 82.2 | 78.6 | YV_val_s012_km |
+| Full model with top-k | :x: | 72.7 | 80.2 | 76.5 | D17_testdev_s012 |
+| Full model with top-k | :heavy_check_mark: | 74.9 | 82.2 | 78.6 | D17_testdev_s012_km |
 
 ### Running them yourselves
 
