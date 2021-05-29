@@ -79,14 +79,20 @@ Produced using `eval_davis.py`
 
 For YouTubeVOS val and DAVIS test-dev we also tried the kernelized memory (called KM in our code) technique described in [Kernelized Memory Network for Video Object Segmentation](https://arxiv.org/abs/2007.08270). It works nicely with our top-k filtering.
 
-**YouTubeVOS val:**
+**YouTubeVOS val (2018):**
+| Model | Kernel Memory (KM)? | Overall Score | J-Seen | J-Unseen | F-Seen | F-Unseen | Pre-computed results |
+| --- |:--:|:---:|:---:|:---:|:---:|:---:|---|
+| Without BL30K, k=20 | :x: | 80.4 | 80.0 | 74.8 | 84.6 | 82.4 | YV_2018_val_s02 |
+| With BL30K, k=20 | :x: | 82.6 | 81.1 | 77.7 | 85.6 | 86.2 | YV_2018_val_s012 |
+
+**YouTubeVOS val (2019):**
 
 Produced using `eval_youtube.py`
 
-| Model | Kernel Memory (KM)? | J-Seen | J-Unseen | F-Seen | F-Unseen | Overall Score | Pre-computed results |
+| Model | Kernel Memory (KM)? | Overall Score | J-Seen | J-Unseen | F-Seen | F-Unseen | Pre-computed results |
 | --- |:--:|:---:|:---:|:---:|:---:|:---:|---|
-| Full model with top-k | :x: | 80.6 | 77.3 | 84.7 | 85.5 | 82.0 | YV_val_s012 |
-| Full model with top-k | :heavy_check_mark: | 81.6 | 77.7 | 85.8 | 85.9 | 82.8 | YV_val_s012_km |
+| Full model with top-k | :x: | 82.0 | 80.6 | 77.3 | 84.7 | 85.5 | YV_val_s012 |
+| Full model with top-k | :heavy_check_mark: | 82.8 | 81.6 | 77.7 | 85.8 | 85.9 | YV_val_s012_km |
 
 **DAVIS 2017 test-dev:**
 
@@ -192,7 +198,7 @@ Main training: `CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=4 python -m torch.distr
 
 While I did start building this from STM's official [evaluation code](https://github.com/seoungwugoh/STM), the official training code is not available and therefore a lot of details are missing. My own judgments are used in the engineering of this work.
 
-- We both use the ResNet-50 backbone up to `layer3` but there are a few minor architecture differences elsewhere (e.g. decoder, mask generation in the last layer)
+- We both use the ResNet-50 backbone up to `layer3`/`res4` but there are a few minor architecture differences elsewhere (e.g. decoder, mask generation in the last layer)
 - This repo does not use the COCO dataset and uses some other static image datasets instead.
 - This repo picks two, instead of three objects for each training sample.
 - Top-k filtering (proposed by us) is included here
@@ -203,7 +209,7 @@ While I did start building this from STM's official [evaluation code](https://gi
 Please cite our paper if you find this repo useful!
 
 ```bibtex
-@inproceedings{MiVOS_2021,
+@inproceedings{cheng2021MiVOS,
   title={Modular Interactive Video Object Segmentation: Interaction-to-Mask, Propagation and Difference-Aware Fusion},
   author={Cheng, Ho Kei and Tai, Yu-Wing and Tang, Chi-Keung},
   booktitle={CVPR},
