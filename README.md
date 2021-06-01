@@ -219,14 +219,14 @@ Please cite our paper if you find this repo useful!
 
 And if you want to cite the datasets:
 
-```bibtex
-@inproceedings{FSS1000,
-  title = {FSS-1000: A 1000-Class Dataset for Few-Shot Segmentation},
-  author = {Li, Xiang and Wei, Tianhan and Chen, Yau Pun and Tai, Yu-Wing and Tang, Chi-Keung},
-  booktitle={CVPR},
-  year={2020}
-}
+<details> 
+<summary>
 
+bibtex
+
+</summary>
+
+```bibtex
 @inproceedings{shi2015hierarchicalECSSD,
   title={Hierarchical image saliency detection on extended CSSD},
   author={Shi, Jianping and Yan, Qiong and Xu, Li and Jia, Jiaya},
@@ -240,6 +240,13 @@ And if you want to cite the datasets:
   and Wang, Dong, and Yin, Baocai and Ruan, Xiang}, 
   booktitle={CVPR},
   year={2017}
+}
+
+@inproceedings{FSS1000,
+  title = {FSS-1000: A 1000-Class Dataset for Few-Shot Segmentation},
+  author = {Li, Xiang and Wei, Tianhan and Chen, Yau Pun and Tai, Yu-Wing and Tang, Chi-Keung},
+  booktitle={CVPR},
+  year={2020}
 }
 
 @inproceedings{zeng2019towardsHRSOD,
@@ -284,5 +291,7 @@ And if you want to cite the datasets:
   year        = {2015}
 }
 ```
+
+</details>
 
 Contact: <hkchengrex@gmail.com>
