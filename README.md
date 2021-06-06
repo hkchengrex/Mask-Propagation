@@ -178,6 +178,8 @@ We implemented training with Distributed Data Parallel (DDP) with two 11GB GPUs.
 
 The model is trained progressively with different stages (0: static images; 1: BL30K; 2: YouTubeVOS+DAVIS). After each stage finishes, we start the next stage by loading the trained weight.
 
+The `.pth` with `_checkpoint` as suffix is used to resume interrupted training (with `--load_model`) which is usually not needed. Typically you only need `--load_network` and load the last network weights (without `checkpoint` in its name).
+
 One concrete example is:
 
 Pre-training on static images: `CUDA_VISIBLE_DEVICES=0,1 OMP_NUM_THREADS=4 python -m torch.distributed.launch --master_port 9842 --nproc_per_node=2 train.py --id retrain_s0 --stage 0`
