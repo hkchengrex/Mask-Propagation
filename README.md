@@ -61,9 +61,9 @@ Produced using `eval_davis_2016.py`
 
 | Model | Top-k? | J | F | J&F | FPS | Pre-computed results |
 | --- |:--:|:--:|:---:|:---:|:---:|---|
-| Without BL pretraining | :x: | 87.0 | 89.0 | 88.0 | 15.5 | D16_s02_notop |
+| Without BL pretraining | :x: | 87.1 | 89.0 | 88.1 | 15.5 | D16_s02_notop |
 | Without BL pretraining | :heavy_check_mark: | 87.8 | 90.0 | 88.9 | 16.9 | D16_s02 |
-| With BL pretraining | :x: | 89.7 | 92.1 | 90.9 | 15.5 | D16_s012_notop |
+| With BL pretraining | :x: | 89.9 | 92.2 | 91.0 | 15.5 | D16_s012_notop |
 | With BL pretraining | :heavy_check_mark: | 89.7 | 92.4 | 91.0 | 16.9 | D16_s012 |
 
 **DAVIS 2017 val:**

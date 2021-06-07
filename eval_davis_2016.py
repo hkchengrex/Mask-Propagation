@@ -71,7 +71,7 @@ for data in progressbar(test_loader, max_value=len(test_loader), redirect_stdout
         if processor.pad[0]+processor.pad[1] > 0:
             prob = prob[:,:,:,processor.pad[0]:-processor.pad[1]]
 
-        out_masks[ti] = prob[1]*255
+        out_masks[ti] = torch.argmax(prob, dim=0)*255
     
     out_masks = (out_masks.detach().cpu().numpy()[:,0]).astype(np.uint8)
 
