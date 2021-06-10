@@ -4,6 +4,8 @@
 
 [[arXiv]](https://arxiv.org/abs/2103.07941) [[Paper PDF]](https://arxiv.org/pdf/2103.07941.pdf) [[Project Page]](https://hkchengrex.github.io/MiVOS/) [[Papers with Code]](https://paperswithcode.com/task/semi-supervised-video-object-segmentation)
 
+## New! See our new [STCN](https://github.com/hkchengrex/MiVOS/tree/MiVOS-STCN) for a better and faster algorithm.
+
 ![Parkour](https://imgur.com/slLiUkE.gif) ![Bike](https://imgur.com/7Kt452P.gif)
 
 This repo implements an improved version of the [Space-Time Memory Network (STM)](https://arxiv.org/abs/1904.00607) and is part of the accompanying code of [Modular Interactive Video Object Segmentation: Interaction-to-Mask, Propagation and Difference-Aware Fusion (MiVOS)](https://hkchengrex.github.io/MiVOS/). It can be used as:
