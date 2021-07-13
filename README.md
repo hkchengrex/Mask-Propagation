@@ -298,4 +298,8 @@ bibtex
 
 </details>
 
+## External link
+
+Congratulations to the 路过 team for winning a [TianChi VOS competition](https://tianchi.aliyun.com/competition/entrance/531873/introduction) with our framework and additional data augmentation. Their code is available here: https://github.com/mrgjbd/copy_paste_for_video_seg
+
 Contact: <hkchengrex@gmail.com>
