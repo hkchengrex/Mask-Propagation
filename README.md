@@ -4,7 +4,9 @@
 
 [[arXiv]](https://arxiv.org/abs/2103.07941) [[Paper PDF]](https://arxiv.org/pdf/2103.07941.pdf) [[Project Page]](https://hkchengrex.github.io/MiVOS/) [[Papers with Code]](https://paperswithcode.com/task/semi-supervised-video-object-segmentation)
 
-# New! See [STCN](https://github.com/hkchengrex/STCN) for a better and faster algorithm. See also [MiVOS+STCN](https://github.com/hkchengrex/MiVOS/tree/MiVOS-STCN).
+## Newer: check out our new work on long-term VOS [XMem](https://github.com/hkchengrex/XMem). It also includes an interactive GUI!
+
+## New: see [STCN](https://github.com/hkchengrex/STCN) for a better and faster algorithm. See also [MiVOS+STCN](https://github.com/hkchengrex/MiVOS/tree/MiVOS-STCN).
 
 ![Parkour](https://imgur.com/slLiUkE.gif) ![Bike](https://imgur.com/7Kt452P.gif)
 
